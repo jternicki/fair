@@ -69,6 +69,31 @@ $('.owl-portfolio').owlCarousel({
     }
 })
 
+// Owl carousel
+$('#owl-feedback').owlCarousel({
+    loop:true,
+    margin:10,
+    navigation : true, // Show next and prev buttons
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+    
+});
+
   // hide #back-top first
   $("#back-top").hide();
 
