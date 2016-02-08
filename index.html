@@ -24,30 +24,12 @@
 		<link href="css/style.css" rel="stylesheet">
 
 		<script type="text/javascript" src="js/modernizr.custom.js"></script>
-		<script type="text/javascript" src="js/jquery.windows.js"></script>
-
-		<script type="text/javascript">
-		$('.window').windows({
-                    snapping: true,
-                    snapSpeed: 500,
-                    snapInterval: 1100,
-                    onScroll: function(scrollPos){
-                        // scrollPos:Number
-                    },
-                    onSnapComplete: function($el){
-                        // after window ($el) snaps into place
-                    },
-                    onWindowEnter: function($el){
-                        // when new window ($el) enters viewport
-                    }
-                });
-		</script>
 
 
 	</head>
 	<body id="page-top">
 		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top fade-in three">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header page-scroll">
@@ -84,7 +66,7 @@
 							<a class="page-scroll" href="#contact">Contact</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#">For visitors</a>
+							<a class="page-scroll btn-white-nav" href="#">For visitors</a>
 						</li>
 					</ul>
 				</div>
@@ -97,21 +79,61 @@
 			<div class="container">
 				<div class="slider-container">
 					<div class="intro-text">
-						<div class="intro-lead-in fade-in two">April 23, 2016&nbsp;&nbsp;|&nbsp;&nbsp;DEC place</div>
-						<div class="intro-heading fade-in one">Employment Fair</div>
-							<div class="subhead-header fade-in two" >It is a Kyiv Post biannual recruiting event that brings together leading companies and prospective employees</div>
-						<a href="#about" class="page-scroll btn btn-xl fade-in three">Learn more</a>
+						
+						<div class="intro-heading">Peolpe matter!</div>
+						<!-- <div class="intro-heading"><img class="logo-header" src="images/KP_EF16_logo.svg"></div>
+						<div class="intro-lead-in">April 23, 2016&nbsp;&nbsp;|&nbsp;&nbsp;DEC place</div> -->
+							<div class="subhead-header" >It is a Kyiv Post biannual recruiting event that brings together leading companies and prospective employees</div>
+						<!-- <a href="#about" class="page-scroll btn btn-xl">Learn more</a> -->
 					</div>
 				</div>
 			</div>
 		</header>
-		<section id="0" class="window dark-bg">
+		<section id="" class="light-bg">
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					<img class="img-responsive logo-reg" src="images/KP_EF16_logo.svg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus bibendum porta. Suspendisse molestie rhoncus augue ac vulputate. Praesent aliquam eget velit dictum hendrerit. In hac habitasse platea dictumst. Cras vel ligula ultrices, consequat lectus nec, consequat ipsum. Nunc sagittis leo non augue condimentum venenatis id eu augue. Proin placerat aliquet diam varius vestibulum. Duis sit amet nisi non turpis lobortis consequat bibendum a ante. Praesent justo ante, aliquet a neque ut, tristique consequat enim. Donec tincidunt ante mi. Integer sed malesuada mauris. Sed et massa eget metus lobortis mollis ac in ipsum. Vivamus a nisi congue, rutrum turpis in, consequat justo. Pellentesque id lectus orci. Curabitur tempus lacus sem, non dapibus felis malesuada eu. Proin sit amet metus libero.</p> 
+			<p>Ut nec sapien erat. Quisque justo mi, venenatis sit amet auctor ac, scelerisque et risus. Vestibulum et mattis neque. Pellentesque volutpat quam vel felis lacinia consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam fringilla augue faucibus, sodales dolor sit amet, vestibulum lectus. Sed tortor libero, porttitor in aliquam quis, ultricies id nunc. Donec gravida auctor orci a gravida. Maecenas luctus mauris ac diam tincidunt, egestas auctor lacus maximus. In sed neque in est congue auctor eu vitae dolor. Donec porttitor in lacus id iaculis. Integer semper ligula eu vulputate porttitor. Donec fermentum sapien tortor, vel posuere sem congue ut.</p></div></div>
+		</section>
+		<section class="dark-bg short-section stats-bar background-secondary">
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 class="stat-number" data-n="24">0</h2>
+							<h6>Employment Fairs</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 class="stat-number" data-n="170">0</h2>
+							<h6>seminars and workshops</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 class="stat-number" data-n="550">0</h2>
+							<h6>participating companies</h6>
+						</div>
+					</div>
+					<div class="col-md-3 mb-sm-30">
+						<div class="counter-item">
+							<h2 class="stat-number" data-n="35000">0</h2>
+							<h6>visitors</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="light-bg">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="section-title">
-							<h2>Why participate?</h2>
-							<p>We have 12 years of experience as a career matchmaker</p>
+							<h2>Flexible participation options</h2>
+							<p>Kyiv Post Employment Fair offers four participation options which will fit your company’s needs and values</p>
 						</div>
 					</div>
 				</div>
@@ -153,125 +175,63 @@
 					</div>
 					<!-- end about module -->
 				</div>
+
+
+				<div class="row">
+					<div class="space"></div>
+						<!-- about module -->
+						<div id="options" class="col-md-3 text-center">
+							<div class="mz-module-about">
+								<i class="material-icons md-36 fa ot-circle">&#xEB3F;</i>
+								<h3>Company booth</h3>
+								<p>Place your company’s branded booth to tell applicants about career opportunities in your office</p>
+							</div>
+						</div>
+						<!-- end about module -->
+						<!-- about module -->
+						<div class="col-md-3 text-center">
+							<div class="mz-module-about">
+								<i class="material-icons md-36 ot-circle">&#xE191;</i>
+								<h3>Seminar / Workshop</h3>
+								<p>Book a 30-minute seminar or workshop to tell applicants about your company’s success story</p>
+							</div>
+						</div>
+						<!-- end about module -->
+						<!-- about module -->
+						<div class="col-md-3 text-center">
+							<div class="mz-module-about">
+								<i class="material-icons md-36 fa ot-circle">&#xE80C;</i>
+								<h3>Absentee participation</h3>
+								<p>If your company’s representatives cannot be present, we still have few options for you.</p>
+							</div>
+						</div>
+						<!-- end about module -->
+						<!-- about module -->
+						<div class="col-md-3 text-center">
+							<div class="mz-module-about">
+								<i class="material-icons md-36 fa ot-circle">&#xE8E5;</i>
+								<h3>General sponsor</h3>
+								<p>Get two options in one package plus exclusive Kyiv Post bonus for advertising both in print and online</p>
+							</div>
+						</div>
+						<!-- end about module -->
+				</div>
+				<div class="col-md-12 text-center">
+				<div class="row">
+					<a href="#" class="btn btn-blue m40">Download</a></div></div>
 			</div>
+
 			<!-- /.container -->
 		</section>
 
-		<section class="light-bg">
-			<div class="container">
-		<div id="about">
-        <div class="container text-center">
-           	<div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="section-title">
-                        <h2>Flexible participation options</h2>
-                        <hr>
-                    </div>
-                    <p>Kyiv Post Employment Fair offers four participation options which will fit your company’s needs and values.</p>
-                </div>
-            	</div>
+		
 
-            <div class="space"></div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="service">
-                        <!-- <span class="fa fa-book fa-3x"></span> -->
-                        <!-- <i class="material-icons md-36 fa ot-circle">&#xE838;</i> -->
-                        <h4>Company booth</h4>
-                        <p>Place your company’s branded booth to tell applicants about career opportunities in your office.</p>
-                        <!-- <a href="#" class="btn btn-blue">Download</a> -->
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="service">
-                        <!-- <span class="fa fa-bicycle fa-3x"></span> -->
-                        <!-- <i class="material-icons md-36 fa ot-circle">&#xE838;</i> -->
-                        <h4>Seminar&nbsp;/&nbsp;Workshop</h4>
-                        <p>Book a 30-minute seminar or workshop to tell applicants about your company’s success story.</p>
-                        <!-- <a href="#" class="btn btn-blue">Download</a> -->
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="service">
-                        <!-- <span class="fa fa-plug fa-3x"></span> -->
-                        <!-- <i class="material-icons md-36 fa ot-circle">&#xE838;</i> -->
-                        <h4>Absentee participation</h4>
-                        <p>If your company’s representatives cannot be present, we still have few options for you.</p>
-                        <!-- <a href="#" class="btn btn-blue">Download</a> -->
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="service">
-                       <!--  <i class="material-icons md-36 fa ot-circle">&#xE838;</i> -->
-                        <h4>General sponsor</h4>
-                        <p>Get two options in one package plus exclusive Kyiv Post bonus for advertising both in print and online.</p>
-                        <!-- <a href="#" class="btn btn-blue">Download</a> -->
-                    </div>
-                </div>
-            <a href="#" class="btn btn-blue m40">Download</a>
-
-
-
-            <!-- </div>
-            <a href="#works" class="down-btn page-scroll">
-                <span class="fa fa-angle-down"></span>
-            </a>
-        </div> -->
-        </div>
-    </div>
-
-    </div>
-    </section>
-
-
-
-
-
-		<!-- <section class="light-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<div class="section-text">
-							<h3>Flexible participation options</h3>
-							<p>Kyiv Post Employment Fair offers four participation options which will fit your company’s needs and values:</p>
-							<ul>
-								<li><span class="values">Company booth</span></li>
-								<li><span class="values">Seminar/workshop</span></li>
-								<li><span class="values">Absentee participation</span></li>
-								<li><span class="values"><strong class="bold-cyan">Exclusive opportunity:</strong> General Sponsor</span></li>
-
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-5">
-
-						<div class="owl-portfolio owl-carousel">
-							<div class="item">
-								<div class="owl-portfolio-item"><img src="images/slider-01.png" class="img-responsive" alt=""></div>
-							</div>
-							<div class="item">
-								<div class="owl-portfolio-item"><img src="images/slider-02.png" class="img-responsive" alt=""></div>
-							</div>
-							<div class="item">
-								<div class="owl-portfolio-item"><img src="images/slider-03.png" class="img-responsive" alt=""></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<section id="history">
+		<section id="history" class="dark-bg">
 			<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<div class="section-title">
-						<h2>Previous Fairs</h2>
+						<h2>History</h2>
 						<!-- <p>Our portfolio is the best way to show our work, you can see here a big range of our work. Check them all and you will find what you are looking for.</p> -->
 					</div>
 				</div>
@@ -367,36 +327,7 @@
 			</div><!-- end container -->
 		</section>
 
-		<section class="dark-bg short-section stats-bar background-secondary">
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-md-3 mb-sm-30">
-						<div class="counter-item">
-							<h2 class="stat-number" data-n="24">0</h2>
-							<h6>Employment Fairs</h6>
-						</div>
-					</div>
-					<div class="col-md-3 mb-sm-30">
-						<div class="counter-item">
-							<h2 class="stat-number" data-n="170">0</h2>
-							<h6>seminars and workshops</h6>
-						</div>
-					</div>
-					<div class="col-md-3 mb-sm-30">
-						<div class="counter-item">
-							<h2 class="stat-number" data-n="550">0</h2>
-							<h6>participating companies</h6>
-						</div>
-					</div>
-					<div class="col-md-3 mb-sm-30">
-						<div class="counter-item">
-							<h2 class="stat-number" data-n="35000">0</h2>
-							<h6>visitors</h6>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 
 		<section id="partners">
 			<div class="container">
@@ -533,8 +464,8 @@
 							</div>
 							<div class="team-text">
 								<h3>Sergiy Gusovsky</h3>
-								<div class="team-position">Restaurateur, Sergiy Gusovsky restaurants</div>
-								<p>Owner of a restaurant: peculiarities of the business. Fall 2015</p>
+								<div class="team-position">Restaurateur</div>
+								<p>Owner of a restaurant: peculiarities of the business. <!-- Fall 2015 --></p>
 							</div>
 						</div>
 					</div>
@@ -553,19 +484,19 @@
 
 	                <div id="owl-demo" class="owl-carousel owl-theme">
 	                  <div class="item">
-	                    <h3 class="carousel-quote">“We were happy to participate in the Employment Fair! <br> Everything was great. We met a lot of students and young specialists <br>and had job interviews with some of them. <br>Now we have candidates for junior positions.”</h3>
+	                    <h3 class="carousel-quote">“We were happy to participate in the Employment Fair! Everything was great. We met a lot of students and young specialists and had job interviews with some of them. Now we have candidates for junior positions.”</h3>
 	                    <br>
 	                    <h6 class="carousel-author">— Yulia Sytnik, Mazars Ukraine</h6>
 	                  </div>
 
 	                  <div class="item">
-	                    <h3 class="carousel-quote">“Participation in the event allowed the company to hire highly qualified specialists <br> in different fields. At the Employment Fair, companies have great opportunities <br> to present themselves as employers and find outstanding professionals <br> who have excellent communication skills, can work in a team, <br> and who are proficient in foreign languages.”</h3>
+	                    <h3 class="carousel-quote">“Participation in the event allowed the company to hire highly qualified specialists in different fields. At the Employment Fair, companies have great opportunities to present themselves as employers and find outstanding professionals who have excellent communication skills, can work in a team, and who are proficient in foreign languages.”</h3>
 	                    <br>
 	                    <h6 class="carousel-author">— Ivan Synyakov, NJSC Naftogaz of Ukraine</h6>
 	                  </div>
 
 	                  <div class="item">
-	                    <h3 class="carousel-quote">“The Kyiv Post Employment Fair is a useful and modern initiative <br>which helps gather highly professional candidates and future specialists in one place. <br>We are always glad to take part in such events with our PwC Academy master classes.”</h3>
+	                    <h3 class="carousel-quote">“The Kyiv Post Employment Fair is a useful and modern initiative which helps gather highly professional candidates and future specialists in one place. We are always glad to take part in such events with our PwC Academy master classes.”</h3>
 	                    <br>
 	                    <h6 class="carousel-author">— Irina Blinova, PwC</h6>
 	                  </div>
@@ -579,30 +510,28 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="section-title">
-							<h2>Participate</h2>
+							<h2>Contact us</h2>
 							<p>Reinforce your HR brand! Join the largest career fair this spring!</p>
+						</div>
+							<div class="section-text">
+								<h4>Victoria Barbaniuk</h4>
+								<p>Employment Fair manager</p>
+								<p><i class="fa fa-phone"></i>+38 044 591 34 08</p>
+								<p><i class="fa fa-phone"></i>+38 098 228 26 30</p>
+								<p><i class="fa fa-envelope"></i>barbaniuk@kyivpost.com</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-3">
-						<div class="section-text">
-							<h4>Victoria Barbaniuk</h4>
-							<p>Employment Fair manager</p>
-							<p><i class="fa fa-phone"></i>+38 044 591 34 08</p>
-							<p><i class="fa fa-phone"></i>+38 098 228 26 30</p>
-							<p><i class="fa fa-envelope"></i>barbaniuk@kyivpost.com</p>
-						</div>
-					</div>
-					<div class="col-md-3">
+					<!-- <div class="col-md-3">
 						<div class="section-text">
 							<h4>Business Hours</h4>
 							<p><i class="fa fa-clock-o"></i> <span class="day">Weekdays:</span><span>9am to 8pm</span></p>
 							<p><i class="fa fa-clock-o"></i> <span class="day">Saturday:</span><span>9am to 2pm</span></p>
 							<p><i class="fa fa-clock-o"></i> <span class="day">Sunday:</span><span>Closed</span></p>
 						</div>
-					</div>
-					<div class="col-md-6">
+					</div> -->
+					<!-- <div class="col-md-6">
 						<form name="sentMessage" id="contactForm" novalidate="">
 							<div class="row">
 								<div class="col-md-6">
@@ -633,8 +562,8 @@
 									<button type="submit" class="btn">Send Message</button>
 								</div>
 							</div>
-						</form>
-					</div>
+						</form> -->
+					<!-- </div> -->
 				</div>
 			</div>
 		</section>
@@ -643,7 +572,7 @@
 		</p>
 		<footer>
 			<div class="container text-center">
-				<p>Theme made by <a href="http://www.moozthemes.com"><span>MOOZ</span>Themes.com</a></p>
+				<img src='images/KP_logo_white.svg'>
 			</div>
 		</footer>
 
@@ -761,7 +690,5 @@
 		<!-- AT -->
 		<script src="js/owl.carousel.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-
-
 	</body>
 </html>

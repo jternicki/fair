@@ -27,7 +27,7 @@ Import Google Fonts
 --------------------*/
 
 /* main font for menu. */
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900);
 /* font for headings, text, tags */
 /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);*/
 /*@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic);*/
@@ -242,19 +242,19 @@ section ul li:before {
 header {
 	background-image: url(../images/Hero.png);
 	background-repeat: none;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
-	background-color: #0097A7;
+	background-color: #fff;
 }
 
 @media (min-width: 1200px) {
 	header {
-		height: 650px;
+		height: 100vh;
 	}
 }
 
@@ -265,7 +265,7 @@ header .intro-text {
 
 @media (min-width: 768px) {
 	header .intro-text {
-		padding-top: 170px;
+		padding-top: 30%;
 		padding-bottom: 400px;
     }
 }
@@ -277,11 +277,11 @@ header .intro-text .intro-lead-in {
 	padding: 4px 20px;
 	font-family: "Roboto",sans-serif;
 	font-size: 20px;
-	color: #fff;
+	color: #000;
 	font-weight: 500;
 	line-height: 40px;
 	letter-spacing: 1px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 @media (min-width: 768px) {
@@ -294,8 +294,8 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
 	/*text-transform: uppercase; */
-	font-weight: 500;
-	font-size: 38px;
+	font-weight: 200;
+	font-size: 120px;
 	line-height: 48px;
 	margin-bottom: 25px;
 	color: #FFFFFF;
@@ -312,7 +312,7 @@ header .intro-text .intro-heading {
 
 .subhead-header {
 	font-family: "Roboto", sans-serif;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 300;
 	font-style: normal;
 	color: #fff;
@@ -382,7 +382,7 @@ header .intro-text .intro-heading {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;
-	color: #E0E0E0;
+	color: #616161;
 }
 
 .ot-circle {
@@ -765,6 +765,10 @@ footer p a span {
 	font-weight: 700;
 }
 
+footer img {
+	opacity: 0.5;
+}
+
 /*--------------------
 6. Modal
 --------------------*/
@@ -1024,6 +1028,7 @@ animation-delay: 3s;
 	font-weight: 700;
 	color: #00ACC1;
 	border: none;
+	margin: 0 auto;
 }
 
 .btn-blue:hover {
@@ -1031,171 +1036,62 @@ animation-delay: 3s;
 	color: #fff;
 	border: none;
 	border-radius: 0;
-	box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
+/*	box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
 	-moz-box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
-	-webkit-box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);*/
+}
+
+
+.btn-white {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	border: none;
+}
+
+.btn-white:hover {
+	background-color: #fff;
+	color: #00ACC1;
+	border: none;
+	border-radius: 0;
 }
 
 
 .m40 {
-	margin-top: 40px;
+	margin: 40px auto 0 auto;
 }
 
-/* line 26, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(1) .content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -170px;
-}
-/* line 31, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(1) .content i {
-  font-size: 4.0em;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  color: #6ab29f;
-}
-/* line 38, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(1) .content h1 {
-  margin: 0;
-}
-/* line 41, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(1) .content h2 {
-  padding: 0 30px;
-}
-
-/* line 49, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(2) .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -180px;
-  margin-left: -160px;
-}
-/* line 55, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(2) .content h2 {
-  color: #d5d7dd;
-  text-align: left;
-}
-/* line 58, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(2) .content h2 .highlight {
-  color: white;
-}
-
-/* line 67, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) ul {
-  list-style-type: none;
-}
-/* line 68, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) .content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -230px;
-}
-/* line 73, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) .content h2 {
-  text-align: center;
-  font-size: 3.0em;
-}
-/* line 77, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) .content .explanation {
-  font-family: BrandonText-Regular, Futura, Helvetica, Arial, sans-serif;
-  color: #333a3e;
-  font-size: 1.4em;
-  text-align: center;
-  padding: 0 15%;
-}
-/* line 83, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(3) .content .explanation li {
-  color: #d5d7dd;
-}
-
-/* line 92, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(4) pre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -220px 0 0 -450px;
-}
-
-/* line 102, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -350px 0 0 -450px;
-}
-/* line 108, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) h1 {
-  color: #333a3e;
-}
-/* line 111, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(5) pre {
-  color: #333a3e;
-}
-
-/* line 119, /Users/Jonas/Projects/repo/windows/scss/demo/_demo.scss */
-.window:nth-child(6) .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -100px;
-  text-align: center;
+.logo-header {
+	min-width: 80%;
 }
 
 
-.window {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 18, ../scss/main.scss */
-.window:nth-child(1) {
-  background: #fff;
-  top: 0%;
-  color: #fff;
+.logo-reg {
+	min-width: 50%;
+	margin: 20px auto 60px auto;
 
 }
 
-/* line 18, ../scss/main.scss */
-.window:nth-child(2) {
-  background: #37474F;
-  top: 100%;
-  color: #fff;
+
+.btn-white-nav {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff !important;
+	border: none;
+	background-color: #00ACC1 !important;
 }
 
-/* line 18, ../scss/main.scss */
-.window:nth-child(3) {
-  background: #6ab29f;
-  top: 200%;
-}
-
-/* line 18, ../scss/main.scss */
-.window:nth-child(4) {
-  background: #333a3e;
-  top: 300%;
-}
-
-/* line 18, ../scss/main.scss */
-.window:nth-child(5) {
-  background: #d0482b;
-  top: 400%;
-}
-
-/* line 18, ../scss/main.scss */
-.window:nth-child(6) {
-  background: #231f20;
-  top: 500%;
+.btn-white-nav:hover {
+	background-color: #006064 !important;
+	color: #fff !important;
+	border: none;
+	border-radius: 0;
 }
 
 
-.main-img {
-	display: block;
-	width: 900px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 5%;
+#owl-demo .item {
+    display: inline-block;
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
