@@ -262,20 +262,26 @@ header {
 
 header .intro-text {
 	padding-top: 100px;
-	padding-bottom: 50px;
+	/*padding-bottom: 50px;*/
 }
 
 @media (min-width: 768px) {
 	header .intro-text {
 		padding-top: 250px;
-		padding-bottom: 400px;
+		/*padding-bottom: 400px;*/
     }
 }
 
 @media (min-width: 1600px) {
 	header .intro-text {
 		padding-top: 350px;
-		padding-bottom: 400px;
+		/*padding-bottom: 400px;*/
+	}
+}
+
+@media (min-width: 1200) {
+	header .intro-text {
+		padding-top: 190px;
 	}
 }
 
@@ -316,6 +322,21 @@ header .intro-text .intro-heading {
 		line-height: 92px;
 		font-size: 98px;
 		margin-bottom: 40px;
+	}
+}
+
+/*@media (min-width: 1400px) {
+	header .intro-text .intro-heading {
+		line-height: 92px;
+		font-size: 98px;
+		margin-bottom: 40px;
+	}
+}*/
+
+@media (min-width: 1000px) {
+	header .intro-text .intro-heading {
+		font-size: 88px;
+		margin: 0 100px 0 100px;
 	}
 }
 
@@ -440,7 +461,7 @@ header .intro-text .intro-heading {
 
 figure {
 	position: relative;
-	float: left;
+	/*float: left;*/
 	overflow: hidden;
 	margin: 0 1px 1px 0;
 /*	min-width: 320px;
@@ -1238,8 +1259,95 @@ animation-delay: 3s;
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
 	.modal-dialog {
 		margin: 200px auto;
 	}
 }
+
+
+@media (min-width: 1200px) {
+	.modal-dialog {
+		margin: 90px auto;
+	}
+}
+
+
+/* ============ MOBILE DEVICES ============ */
+
+/*///// IPHONE 5 320PX /////*/
+
+@media (max-width: 320px) {
+	.navbar-default {
+		background-color: #fff;
+	}
+
+	.navbar-brand>img {
+		display: none;
+	}
+
+	header {
+		height: 100vh;
+	}
+
+	header .intro-text .intro-heading {
+		font-size: 50px;
+		line-height: 56px;
+		text-align: left;
+	}
+
+	.subhead-header {
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 60px;
+	}
+
+	.logo-reg {
+		width: 90%;
+		margin: 0 auto 30px auto;
+	}
+
+	.service {
+		margin-top: 0;
+		padding: 20px;
+	}
+
+	.section-title p {
+		margin: 0 0 30px 0;
+		text-align: left;
+	}
+
+	.carousel-quote {
+		font-size: 16px;
+		text-align: left;
+	}
+	.carousel-author {
+		font-size: 14px;
+		text-align: left;
+		padding: 0 20px 0 20px;
+	}
+
+	#feedback > section {
+		padding: 30px 0;
+	}
+
+	.section-title h2 {
+		margin-bottom: 0px;
+	}
+
+	section#contact p {
+		text-align: left;
+	}
+
+	section#contact .section-text {
+		text-align: left;
+	}
+
+	footer img {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+}
+
+
+
