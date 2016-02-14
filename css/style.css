@@ -166,24 +166,26 @@ section ul li:before {
 }
 .navbar-default .navbar-brand {
 	color: #fff;
-	font-family: "Montserrat",sans-serif;
+	font-family: "Roboto",sans-serif;
 	padding: 5px;
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
-	color: #fec503
+	color: #00ACC1;
 }
-.navbar-default .navbar-collapse {
-	border-color: rgba(255,255,255,.02)
+/*.navbar-default .navbar-collapse {
+	border-color: rgba(255,255,255,.02)*/
 }
 .navbar-default .navbar-toggle {
-	background-color: #fed136;
-	border-color: #fed136
+	background-color: #00ACC1;
+	/*border-color: #fed136*/
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff
+	background-color: #fff;
 }
+
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
-	background-color: #fed136
+	background-color: #00ACC1;
+	/*color:#fff;*/
 }
 .navbar-default .nav li a {
 	font-family: "Roboto",sans-serif;
@@ -237,13 +239,27 @@ section ul li:before {
 	}
 }
 
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	background-color: #00ACC1;
+}
+
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 90%;
+}
+
+.navbar-toggle {
+	margin-left: 8px;
+}
+
 /*--------------------
 3. Header
 --------------------*/
 
 header {
 	background-image: url(../images/Hero.png);
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -267,7 +283,7 @@ header .intro-text {
 
 @media (min-width: 768px) {
 	header .intro-text {
-		padding-top: 250px;
+		padding-top: 200px;
 		/*padding-bottom: 400px;*/
     }
 }
@@ -291,10 +307,10 @@ header .intro-text .intro-lead-in {
 	margin-bottom: 25px;
 	padding: 4px 20px;
 	font-family: "Roboto",sans-serif;
-	font-size: 20px;
+	font-size: 98px;
 	color: #000;
 	font-weight: 500;
-	line-height: 40px;
+	line-height: 92px;
 	letter-spacing: 1px;
 	/*text-transform: uppercase;*/
 }
@@ -864,8 +880,6 @@ footer a:hover {
 
 }
 
-
-
 /*--------------------
 6. Modal
 --------------------*/
@@ -906,6 +920,12 @@ font-size: 11px;
 	margin-right: 15px;
 	padding: 5px 10px;
 }
+
+/*@media (max-width: 768px) {
+	.modal {
+		display: none !important;
+	}
+}*/
 
 /*--------------------
 7. Components
@@ -999,9 +1019,10 @@ color: #fff;
 @media only screen
 and (min-width : 320px)
 and (max-width : 480px) {
+
 #back-top {
 	position: fixed;
-	bottom: 10px;
+	bottom: 20px;
 	right: 30px;
 }
 #back-top a {
@@ -1244,7 +1265,7 @@ animation-delay: 3s;
 }
 
 
-#partners img {
+#employers img {
 	height: 40px;
 	margin: 30px auto;
 }
@@ -1268,7 +1289,7 @@ animation-delay: 3s;
 
 @media (min-width: 1200px) {
 	.modal-dialog {
-		margin: 90px auto;
+		margin: 200px auto;
 	}
 }
 
@@ -1349,5 +1370,167 @@ animation-delay: 3s;
 	}
 }
 
+/* MOBILE General*/
+
+@media (max-width: 768px) {
+	.navbar-default {
+		background-color: #fff;
+	}
+
+	.navbar-brand>img {
+		display: none;
+	}
+
+	header {
+		height: 100vh;
+	}
+
+	header .intro-text .intro-heading {
+		font-size: 50px;
+		line-height: 56px;
+		text-align: left;
+	}
+
+	.subhead-header {
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 60px;
+	}
+
+	.logo-reg {
+		width: 90%;
+		margin: 0 auto 30px auto;
+	}
+
+	.service {
+		margin-top: 0;
+		padding: 20px;
+	}
+
+	.section-title p {
+		margin: 0 0 30px 0;
+		text-align: left;
+	}
+
+	.carousel-quote {
+		font-size: 16px;
+		text-align: left;
+	}
+	.carousel-author {
+		font-size: 14px;
+		text-align: left;
+		padding: 0 20px 0 20px;
+	}
+
+	#feedback > section {
+		padding: 30px 0;
+	}
+
+	.section-title h2 {
+		margin-bottom: 0px;
+	}
+
+	section#contact p {
+		text-align: left;
+	}
+
+	section#contact .section-text {
+		text-align: left;
+	}
+
+	footer img {
+		width: 50%;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#stats {
+		display: none;
+	}
+
+	.navbar-brand>img {
+		height: 90%;
+	}
+
+	header {
+		height: 100vh;
+	}
+}
+
+.navbar-toggle {
+	float: left;
+}
 
 
+@media (min-width: 1200px) {
+	header .intro-text {
+		padding-top: 270px;
+	}
+	.subhead-header {
+		padding-top: 20px;
+	}
+}
+
+@media (min-width: 2400px) {
+	header .intro-text .intro-heading {
+		font-size: 100px;
+		line-height: 130%;
+		margin: 0;
+	}
+	.subhead-header {
+		font-size: 46px;
+	}
+
+	header .intro-text {
+		padding-top: 500px;
+	}
+}
+
+
+.underc {
+	background-image: url(../images/blueprint.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	background-color: #fff;
+	height: 100vh;
+}
+
+.logo-temp {
+	margin-top: 130px;
+}
+
+.underc i {
+	text-align: center;
+	font-size: 18px;
+	color: #00ACC1;
+	margin-left: 10px;
+	padding: 8px 10px;
+	/*border-radius: 50%;*/
+}
+
+.underc i:hover {
+	color: #fff;
+	background-color: #00ACC1;
+}
+/*
+.underc a {
+	padding: 8px 12px;
+	border-radius: 50%;
+}*/
+
+/*.underc a:hover {
+	background-color: #00ACC1;*/
+
+	.window:nth-child(1) .content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -170px;
+}

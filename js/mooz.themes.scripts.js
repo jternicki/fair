@@ -75,7 +75,7 @@ $('#owl-feedback').owlCarousel({
     margin:10,
     navigation : true, // Show next and prev buttons
     dots:true,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
     slideSpeed : 300,
