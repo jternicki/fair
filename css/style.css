@@ -253,6 +253,10 @@ section ul li:before {
 	margin-left: 8px;
 }
 
+.logo-big {
+	height:120%;
+}
+
 /*--------------------
 3. Header
 --------------------*/
@@ -514,6 +518,7 @@ figcaption {
 figure.effect-bubba {
 	background: #263238;
 	margin-bottom: 1px;
+	cursor: auto;
 }
 
 figure.effect-bubba img {
@@ -786,8 +791,9 @@ section#contact p:nth-child(3) {
 }
 
 .contact i {
-	margin-right: 5px;
+	/*margin-right: 5px;*/
 }
+
 
 section#contact h4 {
 	font-size: 24px;
@@ -797,6 +803,14 @@ section#contact h4 {
 section#contact p {
 	font-size: 18px;
 	margin-bottom: 20px;
+}
+
+section#contact a {
+	font-weight: 300;
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #000;
+	text-decoration: none;
 }
 
 section#contact span {
@@ -818,16 +832,9 @@ section#contact i {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	margin: 6px 10px 0px 10px;
+	margin: 6px 20px 20px 10px;
 }
 
-.p50l {
-	padding-left: 350px;
-}
-
-.p50r {
-	padding-right: 350px;
-}
 
 
 /*--------------------
@@ -872,6 +879,10 @@ footer a {
 	padding: 8px 12px;
 	border-radius: 50%;
 	opacity: 0.5;
+}
+
+footer a:last-child {
+	padding: 8px 10px;
 }
 
 footer a:hover {
@@ -920,12 +931,6 @@ font-size: 11px;
 	margin-right: 15px;
 	padding: 5px 10px;
 }
-
-/*@media (max-width: 768px) {
-	.modal {
-		display: none !important;
-	}
-}*/
 
 /*--------------------
 7. Components
@@ -1134,23 +1139,11 @@ animation-delay: 3s;
 
 
 .service{
-	/*border: 1px solid #E0E0E0;*/
 	margin-top: 20px;
 	margin-bottom: 0px;
 	position: relative;
 	padding: 25px;
 }
-
-/*
-.service:hover>h4,
-.service:hover>span.fa{
-	color: #00ACC1;
-}
-.service:hover{
-	border: 1px solid #00ACC1;
-	cursor: pointer;
-}
-*/
 
 .service p{
 	font-size: 16px;
@@ -1178,9 +1171,6 @@ animation-delay: 3s;
 	color: #fff;
 	border: none;
 	border-radius: 0;
-/*	box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
-	-moz-box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);
-	-webkit-box-shadow: 0px 0px 6px 1px rgba(119, 119, 119, 0.75);*/
 }
 
 
@@ -1259,7 +1249,6 @@ animation-delay: 3s;
 	border: 1px solid #00ACC1; 
 	border-radius: 50%;
 	background-color: none;
-	/*margin: 0 2px 4px;*/
 	margin: 0 auto;
 	font-size: 34px;
 }
@@ -1274,203 +1263,12 @@ animation-delay: 3s;
 	color: #fff;
 }
 
-@media (min-width: 1200px) {
-	section {
-		padding: 30px 0;
-	}
-}
-
-@media (min-width: 1600px) {
-	.modal-dialog {
-		margin: 200px auto;
-	}
-}
-
-
-@media (min-width: 1200px) {
-	.modal-dialog {
-		margin: 200px auto;
-	}
-}
-
-
-/* ============ MOBILE DEVICES ============ */
-
-/*///// IPHONE 5 320PX /////*/
-
-@media (max-width: 320px) {
-	.navbar-default {
-		background-color: #fff;
-	}
-
-	.navbar-brand>img {
+.logo-icon {
 		display: none;
 	}
 
-	header {
-		height: 100vh;
-	}
 
-	header .intro-text .intro-heading {
-		font-size: 50px;
-		line-height: 56px;
-		text-align: left;
-	}
-
-	.subhead-header {
-		font-size: 24px;
-		text-align: left;
-		margin: 0 0 60px;
-	}
-
-	.logo-reg {
-		width: 90%;
-		margin: 0 auto 30px auto;
-	}
-
-	.service {
-		margin-top: 0;
-		padding: 20px;
-	}
-
-	.section-title p {
-		margin: 0 0 30px 0;
-		text-align: left;
-	}
-
-	.carousel-quote {
-		font-size: 16px;
-		text-align: left;
-	}
-	.carousel-author {
-		font-size: 14px;
-		text-align: left;
-		padding: 0 20px 0 20px;
-	}
-
-	#feedback > section {
-		padding: 30px 0;
-	}
-
-	.section-title h2 {
-		margin-bottom: 0px;
-	}
-
-	section#contact p {
-		text-align: left;
-	}
-
-	section#contact .section-text {
-		text-align: left;
-	}
-
-	footer img {
-		width: 80%;
-		margin-bottom: 20px;
-	}
-}
-
-/* MOBILE General*/
-
-@media (max-width: 768px) {
-	.navbar-default {
-		background-color: #fff;
-	}
-
-	.navbar-brand>img {
-		display: none;
-	}
-
-	header {
-		height: 100vh;
-	}
-
-	header .intro-text .intro-heading {
-		font-size: 50px;
-		line-height: 56px;
-		text-align: left;
-	}
-
-	.subhead-header {
-		font-size: 24px;
-		text-align: left;
-		margin: 0 0 60px;
-	}
-
-	.logo-reg {
-		width: 90%;
-		margin: 0 auto 30px auto;
-	}
-
-	.service {
-		margin-top: 0;
-		padding: 20px;
-	}
-
-	.section-title p {
-		margin: 0 0 30px 0;
-		text-align: left;
-	}
-
-	.carousel-quote {
-		font-size: 16px;
-		text-align: left;
-	}
-	.carousel-author {
-		font-size: 14px;
-		text-align: left;
-		padding: 0 20px 0 20px;
-	}
-
-	#feedback > section {
-		padding: 30px 0;
-	}
-
-	.section-title h2 {
-		margin-bottom: 0px;
-	}
-
-	section#contact p {
-		text-align: left;
-	}
-
-	section#contact .section-text {
-		text-align: left;
-	}
-
-	footer img {
-		width: 50%;
-		margin-bottom: 10px;
-	}
-}
-
-@media (max-width: 1024px) {
-	#stats {
-		display: none;
-	}
-
-	.navbar-brand>img {
-		height: 90%;
-	}
-
-	header {
-		height: 100vh;
-	}
-}
-
-.navbar-toggle {
-	float: left;
-}
-
-
-@media (min-width: 1200px) {
-	header .intro-text {
-		padding-top: 270px;
-	}
-	.subhead-header {
-		padding-top: 20px;
-	}
-}
+/* D E S K T O P */
 
 @media (min-width: 2400px) {
 	header .intro-text .intro-heading {
@@ -1483,54 +1281,233 @@ animation-delay: 3s;
 	}
 
 	header .intro-text {
-		padding-top: 500px;
+		padding-top: 500px !important;
+	}
+}
+
+@media (min-width: 1600px) {
+	.modal-dialog {
+		margin: 200px auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	section {
+		padding: 30px 0;
+	}
+	.modal-dialog {
+		margin: 200px auto;
+	}
+	.navbar-default .navbar-brand {
+		padding-top: 15px;
+	}
+}
+
+@media (min-width: 1200px) {
+	header .intro-text {
+		padding-top: 270px;
+	}
+	.subhead-header {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#stats {
+		display: none;
+	}
+
+	.navbar-brand>img {
+		height: 90%;
+		margin-top: 10px;
+	}
+
+	header {
+		height: 100vh;
+	}
+
+	.team-item p {
+		font-size: 10px;
+	}
+
+	.team-item .team-position {
+		margin: 10px 0 5px;
+		letter-spacing: 1px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.navbar-brand>img {
+		display: none;
+	}
+
+}
+
+/* ============ MOBILE DEVICES ============ */
+
+@media (max-width: 768px) {
+	.navbar-default {
+		background-color: #fff;
+	}
+
+	.navbar-brand>img {
+		display: none;
+	}
+
+	section {
+		padding: 30px 0;
+	}
+
+	header {
+		height: 100vh;
+	}
+
+	header .intro-text .intro-heading {
+		font-size: 50px;
+		line-height: 56px;
+		text-align: left;
+	}
+
+	.subhead-header {
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 60px;
+	}
+
+	.logo-reg {
+		width: 90%;
+		margin: 0 auto 30px auto;
+	}
+
+	.service {
+		margin-top: 0;
+		padding: 20px;
+	}
+
+	.section-title p {
+		margin: 0 0 30px 0;
+		text-align: left;
+	}
+
+	.carousel-quote {
+		font-size: 16px;
+		text-align: left;
+	}
+	.carousel-author {
+		font-size: 14px;
+		text-align: left;
+		padding: 0 20px 0 20px;
+	}
+
+	#feedback > section {
+		padding: 30px 0;
+	}
+
+	.section-title h2 {
+		margin-bottom: 10px;
+	}
+
+
+	section#contact a {
+		text-align: left !important;
+
+	}
+
+	/*section#contact .section-text {
+		text-align: left;
+	}*/
+
+	section#contact .section-title h2 {
+		margin-bottom: 20px;
+	}
+
+	section#contact .row:last-child {
+		padding: 0 36px;
+	}
+
+	footer img {
+		width: 50%;
+		margin-bottom: 10px;
 	}
 }
 
 
-.underc {
-	background-image: url(../images/blueprint.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	text-align: center;
-	background-color: #fff;
-	height: 100vh;
+.navbar-toggle {
+	float: left;
 }
 
-.logo-temp {
-	margin-top: 130px;
-}
+/*///// IPHONE 5 320PX /////*/
 
-.underc i {
-	text-align: center;
-	font-size: 18px;
-	color: #00ACC1;
-	margin-left: 10px;
-	padding: 8px 10px;
-	/*border-radius: 50%;*/
-}
+@media (max-width: 400px) {
 
-.underc i:hover {
-	color: #fff;
-	background-color: #00ACC1;
-}
-/*
-.underc a {
-	padding: 8px 12px;
-	border-radius: 50%;
-}*/
+	footer p {
+		margin-bottom: 10px;
+	}
 
-/*.underc a:hover {
-	background-color: #00ACC1;*/
 
-	.window:nth-child(1) .content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  margin-top: -170px;
+	.navbar-default {
+		background-color: #fff;
+	}
+
+	.navbar-brand>img {
+		display: none;
+	}
+
+	header {
+		height: 100vh;
+	}
+
+	header .intro-text .intro-heading {
+		font-size: 50px;
+		line-height: 56px;
+		text-align: left;
+	}
+
+	.subhead-header {
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 60px;
+	}
+
+	.logo-reg {
+		width: 90%;
+		margin: 0 auto 30px auto;
+	}
+
+	.service {
+		margin-top: 0;
+		padding: 20px;
+	}
+
+	.section-title p {
+		margin: 0 0 30px 0;
+		text-align: left;
+	}
+
+	.carousel-quote {
+		font-size: 16px;
+		text-align: left;
+	}
+	.carousel-author {
+		font-size: 14px;
+		text-align: left;
+		padding: 0 20px 0 20px;
+	}
+
+	#feedback > section {
+		padding: 30px 0;
+	}
+
+	.section-title h2 {
+		margin-bottom: 0px;
+	}
+
+	footer img {
+		width: 60%;
+		margin-bottom: 15px;
+	}
+
+	section#contact .row:last-child {
+		padding: 0 10px;
+	}
 }
