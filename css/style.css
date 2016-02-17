@@ -1305,7 +1305,7 @@ animation-delay: 3s;
 
 @media (min-width: 1200px) {
 	header .intro-text {
-		padding-top: 270px;
+		padding-top: 300px;
 	}
 	.subhead-header {
 		padding-top: 20px;
@@ -1343,9 +1343,16 @@ animation-delay: 3s;
 
 }
 
+@media (min-width: 768px) {
+	header .intro-text .intro-heading {
+		font-size: 90px;
+		line-height: 94px;
+	}
+}
+
 /* ============ MOBILE DEVICES ============ */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navbar-default {
 		background-color: #fff;
 	}
@@ -1509,5 +1516,10 @@ animation-delay: 3s;
 
 	section#contact .row:last-child {
 		padding: 0 10px;
+	}
+
+	.service p {
+		font-size: 14px;
+		line-height: 16px;
 	}
 }
