@@ -10,13 +10,21 @@ dark grey: #263238;
 
  /* Fonts */
 
- @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic);
 
+/* Google Material Icons */
+
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6, p, button {
+h1, h2, h3, h4, h5, h6, button, strong, span, p {
 	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
 }
 
 h2 {
@@ -39,6 +47,7 @@ p {
 	font-size: 18px;
 	font-weight: 300;
 	color: #000;
+	line-height: 160%;
 }
 
 strong {
@@ -152,7 +161,7 @@ strong {
 /* Sections */
 
 section {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 
 .section-white {
@@ -216,6 +225,15 @@ section {
 	font-weight: 300;
 }
 
+/* Section how it works */
+
+.infographic-block {
+	display: block;
+	background-color: #fff;
+	border: 1px solid grey;
+	padding: 20px;
+}
+
 /* Participants */
 
 .participant-logo {
@@ -224,3 +242,106 @@ section {
 	vertical-align: middle;
 	margin: 20px auto;
 }
+
+/* Agenda */
+
+.date {
+	font-weight: 300;
+	margin-right: 66px;
+}
+
+.seminar-title {
+	font-weight: 400;
+}
+
+
+.ptitle {
+	text-decoration: none !important;
+	font-size: 16px;
+}
+
+.bio {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.media-object {
+	width: 130px; 
+	height: auto;
+	margin-right: 10px;
+}
+.panel-group {
+	margin: 0 15%;
+}
+
+.panel-default>.panel-heading {
+	background-color: #fff !important;
+	background-image: none !important;
+}
+
+.panel-default>.panel-heading:hover {
+	background-color: #fff176 !important;
+}
+
+i.material-icons {
+	margin-right: 6px;
+} 
+
+.speaker {
+	font-weight: 400;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+
+.media-heading {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/* Map */
+
+#map {
+	overflow:hidden;
+	height:340px;
+	width:100%;
+}
+
+/* Feedback */
+
+#feedback .overlay{
+	height: auto;
+	min-height: 200px;
+	overflow: hidden;
+}
+
+#owl-feedback >.item {
+	padding: 0 10%;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 2px 5px;
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 0;
+	background: #fff176;
+}
+
+.item > i {
+	text-align: center;
+}
+
+.carousel-quote {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.carousel-author {
+	font-weight: 400;
+	font-size: 16px;
+}
+
