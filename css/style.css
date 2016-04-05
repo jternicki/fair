@@ -10,7 +10,7 @@ dark grey: #263238;
 
 * {
 	font-size: 16px;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 
@@ -71,7 +71,7 @@ p {
 	font-size: 1.125em;
 	font-weight: 300;
 	line-height: 160%;
-	letter-spacing: 0.025em;
+	color:#263238;
 }
 
 strong {
@@ -179,7 +179,45 @@ a {
 }
 
 .hero-slogan {
-	padding: 7% 20% 0 20%;
+	padding: 5% 20% 0 20%;
+}
+
+.arrow-down {
+	position: absolute;
+	top: 84vh;
+	color: #fff;
+	box-shadow: 0 0 6px rgba(38,50,56,.3);
+	background-color: #ef5350;
+	padding: 4px;
+	border-radius: 50%;
+}
+
+.general-sponsor {
+	font-size: 0.875em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	letter-spacing: 0.5px;
+}
+
+.general-sponsor-logo {
+	margin-top: 0 auto;
+	height: 30px;
+	width: auto;
+}
+
+.subhead {
+	font-weight: 400;
+	font-size: 1.75em;
+}
+
+.hero-date {
+	font-size: 1.5em;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 
@@ -194,14 +232,35 @@ section {
 }
 
 .section-grey {
-	background-color: #EEEEEE;
+	background-color: #ECEFF1;
 }
 
 .section-dark {
 	background-color: #263238;
 }
 
+.section-red {
+	background-color: #ef5350;
+}
+
+.section-blue {
+	background-color:  #00acc1;
+}
+
+.section-teal {
+	background-color: #00796b;
+}
+
 /* About section */
+
+section#about {
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+
+.about-head {
+	text-align: left;
+}
 
 .logo-about {
 	display: block;
@@ -210,19 +269,40 @@ section {
 }
 
 .keypoint {
-	border: 4px solid #fdf382;
+	border: 2px solid #fff;
 	padding: 30px;
+	height: 270px;
 }
 
 .keypoing-head {
-	color: #fdf382;
+	color: #fff;
+}
+
+.keypoing-head-unit {
+	color: #fff;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #fff;
 }
 
 .keypoint-content {
 	font-size: 1em;
 	color: #fff;
 	text-align: left;
-	letter-spacing: 0;
+}
+
+.plane {
+	width: 20%;
+	float: left;
+}
+
+.plane-img {
+	width: 90%;
+}
+
+.content {
+	width: 80%;
+	float: right;
+	padding-left: 60px;
 }
 
 /* Employers */
@@ -253,20 +333,20 @@ section {
 }
 
 
-/* Spealers */
+/* Speakers */
 
 .speaker {
 	background-color: #fff;
 	width: 164px;
 	padding: 20px;
+	margin-top: 40px;
 }
 
-.speaker:hover {
+/*.speaker:hover {
 	-webkit-box-shadow: 0 0 6px rgba(38,50,56,.3);
 	-moz-box-shadow: 0 0 6px rgba(38,50,56,.3);
 	box-shadow: 0 0 6px rgba(38,50,56,.3);
-	/*border: 1px solid #263238;*/
-}
+}*/
 
 .speaker-inactive {
 	opacity: 0.3;
@@ -278,6 +358,7 @@ section {
  }
 
  .speaker-name {
+ 	padding-top: 10px;
  	font-weight: 700;
  	text-align: center;
  }
@@ -291,30 +372,62 @@ section {
  /* Seminars and workshops */
 
  .timetable {
- 	display: block;
  	margin: 10px auto;
  	width: 960px;
+ 	border: 1px solid #CFD8DC;
+ 	padding: 10px;
  }
 
- .timetable-unit {
- 	font-size: 2em !important;
- 	display: block;
- 	text-align: left;
- 	padding: 20px 20px;
- 	color: #424242;
- 	border: 1px solid #eeeeee;
+/* .timetable:hover {
+ 	-webkit-box-shadow: 0 0 6px rgba(38,50,56,.3);
+	-moz-box-shadow: 0 0 6px rgba(38,50,56,.3);
+	box-shadow: 0 0 6px rgba(38,50,56,.3);
+ }
+*/
+  .timetable-time, .timetable-name, .timetable-author {
+ 	display: table-cell;
  }
 
-  .timetable-unit:hover {
-  	background-color:#006064;
-  	color:#fff;
-  	text-decoration: none;
-  }
+ .timetable-time {
+ 	padding-right: 30px;
+ }
 
-.timetable-unit > span, .timetable-unit > i {
-	padding-right: 40px;
+ p > i {
+ 	padding-right: 20px;
+ 	position: relative;
+ 	top:2px;
+ }
+
+ .timetable-author {
+ 	padding-left: 40px;
+ }
+
+.timetable-name > p {
+	font-weight: 400;
+	letter-spacing: normal;
 }
 
-.timetable-unit > strong {
-	padding-right: 248px;
+
+/* Venue */
+
+.location-box {
+	display: block;
+	margin: 60px auto;
 }
+
+
+.location-icon {
+	color: #ef5350;
+	background-color: #fff;
+	padding: 14px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+/* Less fix. */
+
+ p {
+ 	margin: 0 !important;
+ }
