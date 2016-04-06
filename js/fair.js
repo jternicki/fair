@@ -5,7 +5,7 @@ function init_map() {
  
         var var_mapoptions = {
           center: var_location,
-          zoom: 17,
+          zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           mapTypeControl: false,
           panControl:false,
@@ -111,7 +111,7 @@ function init_map() {
             ]
         };
 
-    var var_pin = 'img/marker-21x32.png';
+    var var_pin = 'img/elements/flag.svg';
     var var_marker = new google.maps.Marker({
       position: var_location,
       map: var_map,
@@ -155,7 +155,7 @@ $('.owl-portfolio').owlCarousel({
 })
 
 // Owl carousel
-$('#owl-feedback').owlCarousel({
+$('.feedback-carousel').owlCarousel({
     loop:true,
     margin:10,
     navigation : true, // Show next and prev buttons
@@ -165,6 +165,8 @@ $('#owl-feedback').owlCarousel({
     autoplayHoverPause:true,
     slideSpeed : 300,
     paginationSpeed : 400,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
     responsive:{
         0:{
             items:1
@@ -178,3 +180,16 @@ $('#owl-feedback').owlCarousel({
     }
     
 });
+
+
+// Copyright 2014-2015 Twitter, Inc.
+// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.querySelector('head').appendChild(msViewportStyle)
+}
