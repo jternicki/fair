@@ -262,7 +262,7 @@ section ul li:before {
 --------------------*/
 
 header {
-	background-image: url(../marketing/images/Hero.png);
+	background-image: url(../images/Hero.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -271,7 +271,7 @@ header {
 	background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
-	background-color: #fff;
+	background-color: #00acc1;
 }
 
 @media (min-width: 1200px) {
@@ -832,7 +832,7 @@ section#contact i {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	margin: 6px 20px 20px 10px;
+	margin: 6px 10px 20px 10px;
 }
 
 
@@ -1305,7 +1305,7 @@ animation-delay: 3s;
 
 @media (min-width: 1200px) {
 	header .intro-text {
-		padding-top: 300px;
+		padding-top: 220px;
 	}
 	.subhead-header {
 		padding-top: 20px;
@@ -1522,4 +1522,12 @@ animation-delay: 3s;
 		font-size: 14px;
 		line-height: 16px;
 	}
+}
+
+
+h6.general-sponsor {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
 }
