@@ -262,7 +262,7 @@ section ul li:before {
 --------------------*/
 
 header {
-	background-image: url(../images/Hero.png);
+	background-image: url(../images/hero.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
