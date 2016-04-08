@@ -13,6 +13,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -121,7 +122,29 @@
           <div class="row">
             <div class="col-sm-12 text-center"><h3 class="teal">Роботодавці весняного Ярмарку</h3><p>Дізнайтеся більше про цьогорічних роботодавців, аби краще підготуватися до зустрічі з ними на Ярмарку Вакансій 23 квітня!</p></div>
           </div>
-          <div class="row employer">
+
+          <div class="employers-carousel">
+                <div class="employer-unit"><img class="employer-sq-n" src="img/employers/acca.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/auchan.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/bdo.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/ey.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/loreal.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/mazars.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/mindy.png"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/pdf.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/porsche.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/procredit.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/pwc.png"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/pzu.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/robota.svg"></div>
+                <div class="employer-unit"><img class="employer-h" src="img/employers/ukrsibbank.svg"></div>
+                
+          </div>
+
+
+
+
+         <!--  <div class="row employer">
             <div class="col-md-2 col-sm-6 col-xs-12"><img class="employer-v" src="img/employers/01-acca.svg" ></div>
             <div class="col-md-2 col-sm-6 col-xs-12"><img class="employer-h" src="img/employers/02-auchan.svg" ></div>
             <div class="col-md-2 col-sm-6 col-xs-12"><img class="employer-h" src="img/employers/03-bdo.svg" ></div>
@@ -142,7 +165,7 @@
             <div class="col-md-2 col-sm-6 col-xs-12"><img class="employer-h" src="img/employers/13-ukrsibbank.svg" ></div>
             <div class="col-md-2 col-sm-6 col-xs-12"><img class="employer-h" src="img/employers/14-mindy.png" ></div>
             <div class="col-md-4 col-sm-6 col-xs-12"></div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -344,20 +367,24 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
     <script src="js/owl.carousel.min.js"></script>
 <!--     <script type="text/javascript" src="assets/js/modal-box.js"></script> -->
+    <script type="text/javascript" src="js/fair.js"></script>
+
+    <script type="text/javascript">javascript:(function(){var s=document.createElement("script");s.onload=function(){bootlint.showLintReportForCurrentDocument([]);};s.src="https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js";document.body.appendChild(s)})();</script>
+
     <script type="text/javascript">
-        // Scrollspy
+        // Carousel for feedback
         $(document).ready(function(){
            $(".owl-carousel").owlCarousel();
           });
     </script>
+
+     <script type="text/javascript">
+        // Carousel for employers
+        $(document).ready(function(){
+           $(".employers-carousel").owlCarousel();
+          });
+    </script>
     <script src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript">$('body').scrollspy({ target: '#header' })</script>
-
-
-
-    <script type="text/javascript" src="js/fair.js"></script>
-
-    <script type="text/javascript">javascript:(function(){var s=document.createElement("script");s.onload=function(){bootlint.showLintReportForCurrentDocument([]);};s.src="https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js";document.body.appendChild(s)})();</script>
 
   </body>
 </html>

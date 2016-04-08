@@ -158,7 +158,7 @@ $('.owl-portfolio').owlCarousel({
 $('.feedback-carousel').owlCarousel({
     loop:true,
     margin:10,
-    navigation : true, // Show next and prev buttons
+    navigation : false, // Show next and prev buttons
     dots:true,
     autoplay:false,
     autoplayTimeout:5000,
@@ -180,6 +180,37 @@ $('.feedback-carousel').owlCarousel({
     }
     
 });
+
+// Employers carousel 
+
+$('.employers-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    navigation : false, // Show next and prev buttons
+    nav: false,
+    navText: false,
+    dots: true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:true
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+})
 
 
 // Copyright 2014-2015 Twitter, Inc.
