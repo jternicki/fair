@@ -155,7 +155,7 @@ $('.owl-portfolio').owlCarousel({
 })
 
 // Owl carousel
-$('.feedback-carousel').owlCarousel({
+$('#feedback-carousel').owlCarousel({
     loop:true,
     margin:10,
     navigation : false, // Show next and prev buttons
@@ -183,30 +183,26 @@ $('.feedback-carousel').owlCarousel({
 
 // Employers carousel 
 
-$('.employers-carousel').owlCarousel({
+$('#employers-carousel').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    navigation : false, // Show next and prev buttons
-    nav: false,
-    navText: false,
-    dots: true,
-    slideSpeed : 300,
-    paginationSpeed : 400,
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true,
+            dots: false
         },
         600:{
             items:3,
-            nav:true
+            nav:false
         },
         1000:{
-            items:5,
-            nav:true,
+            items:6,
+            nav:false,
+            dots: true,
             loop:true
         }
     }

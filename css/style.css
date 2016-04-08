@@ -329,37 +329,13 @@ section {
 /* Employers */
 
 .employer {
-	margin: 40px 0;
+	margin: 0 auto;
 }
 
-.employer-h {
-	display: block;
-	margin: 0 auto;
+/*.owl-item img {
+	height: 150px;
 	width: auto;
-	height: 33.3%;
-}
-
-.employer-h-big {
-	display: block;
-	margin: 0 auto;
-	width: auto;
-	height: 33.3%;
-}
-
-.employer-v {
-	display: block;
-	margin: 0 auto;
-	width: 43.3%;
-	height: auto;
-}
-
-.employer-sq-n {
-	display: block;
-	margin: 0 auto;
-	width: 20.3%;
-	height: auto;
-}
-
+}*/
 
 /* Speakers */
 
@@ -403,9 +379,36 @@ section {
 	font-family: 'Roboto Condensed', arial, Helvetica, sans-serif;
 }
 
-#schedule button {
-	margin: 40px auto 0 auto;
+#schedule a {
 	display: block;
+	margin: 40px auto 0 auto; 
+	text-align: center;
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	background: transparent;
+	font-size: 1em;
+	letter-spacing: 0.5px;
+	border: none;
+	color: #ef5350;
+	border-radius: 0;
+	padding: 10px 15px;
+	max-width: 18%;
+
+}
+
+
+#schedule a:hover, #schedule a:focus, #schedule a:active {
+	background-color: #ef5350;
+	color: #fff;
+	text-decoration: none;
+}
+
+.icon-butt {
+	position: relative;
+	top: 4px;
+	padding-right: 10px;
 }
 
  .timetable {
@@ -458,16 +461,21 @@ section {
 .location-box {
 	display: block;
 	margin: 40px auto 0 auto;
+	max-width: 400px;
 }
 
 .location-box > p {
+	display: inline-block;
 	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+
 }
 
-.location-icon {
+.location-box > i {
+	display: inline-block;
 	color: #ef5350;
 	background-color: #fff;
 	padding: 14px;
+	margin-right: 20px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -478,6 +486,32 @@ section {
 	height: 400px;
 }
 
+
+/* Sponsors*/
+
+#sponsors .general-sponsor {
+	color: #00796b;
+	display: block;
+}
+
+#sponsors .general-sponsor-logo {
+	height: 50px;
+	display: block;
+	margin: 0 auto;
+}
+
+#sponsors .general-sponsor-logo-sm {
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+}
+
+
+#sponsors .sponsor {
+	display: block;	
+	margin: 0 auto;
+	/*width: 500px;*/ 
+}
 
 /* Feedback */
 
@@ -574,34 +608,6 @@ section {
 	opacity: 1;
 }
 
-/* Buttons */
-
-.btn {
-	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-weight: 400;
-	background: transparent;
-	font-size: 1em;
-	letter-spacing: 0.5px;
-	border: none;
-	color: #ef5350;
-	border-radius: 0;
-	padding: 10px 15px;
-}
-
-.btn:hover, .btn:focus, .btn:active {
-	background-color: #ef5350;
-	color: #fff;
-}
-
-.icon-btn {
-	position: relative;
-	top: 4px;
-	padding-right: 10px;
-}
-
-
-
 
 /* Less fix. */
 
@@ -612,11 +618,7 @@ section {
 
 /* owl controls */
 
-.owl-dot {
-	color: #000;
-	width: 50px;
 
-} 
 
 
  /* Devices */
