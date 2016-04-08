@@ -160,8 +160,16 @@ a {
 
 }
 
-.icon-bar {
-	color: #fff;
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-toggle {
+	border-radius: 0px;
+}
+
+.navbar-toggle:hover, .navbar-toggle:focus {
+		background-color: #ef5350;
 }
 
 .navbar-collapse {
@@ -624,6 +632,89 @@ section {
  /* Devices */
 
 /* Extra small devices (phones, less than 768px) */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) { 
+	body {
+		margin-bottom: 200px;
+	}
+
+	.hero-slogan {
+		padding: 7% 1% 0% 1%;
+	}
+
+
+	h1 br {
+		display: none;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	.logo-about {
+		height: 40px;
+	}
+
+	.timetable {
+		width: 100%;
+	}
+
+	.timetable-time, .timetable-name, .timetable-author {
+		display: block;
+	}
+
+	.timetable-author {
+		padding-left: 0;
+	}
+
+	p > i {
+		padding-right: 10px;
+	}
+
+	#schedule a {
+		max-width: 60%;
+	}
+
+	.quote-hr {
+		display: none;
+	}
+
+	.quote-header {
+		padding: 0 140px;
+	}
+
+	.feedback-icon {
+		margin: 0 auto;
+	}
+
+	.footer {
+		height: 200px;
+	}
+
+	.logo-footer {
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+
+	.footer-txt {
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.social-footer {
+		padding-left: 0;
+		width: 50%;
+		margin: 20px auto 0 auto
+	}
+
+	.contacts {
+		margin-top: 10px;
+	}
+
+
+ }
+
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
@@ -659,6 +750,46 @@ section {
 	}
 
  }
+
+/* Navbar for tablets */
+ @media (max-width: 1025px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+
+}
 
 /* Fixes */
 
