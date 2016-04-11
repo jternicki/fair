@@ -463,6 +463,22 @@ section {
 	letter-spacing: normal;
 }
 
+.timetable-short-one {
+	padding-left: 300px;
+}
+
+.timetable-short-two {
+	padding-left: 73px;
+}
+
+.timetable-short-three {
+	padding-left: 435px;
+}
+
+.timetable-short-four {
+	padding-left: 255px;
+}
+
 
 /* Venue */
 
