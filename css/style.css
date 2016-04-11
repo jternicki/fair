@@ -717,6 +717,36 @@ section {
 
 /* No media query since this is the default in Bootstrap */
 
+@media (max-width: 320px) { 
+	h1 {
+		font-size: 2em;
+	}
+
+	#feedback {
+		display: none;
+	}
+
+	#map {
+		height: 250px;
+	}
+
+	.location-box > i {
+		margin: 0 0 20px 80px;
+	}
+
+	.location-box > p {
+		text-align: center;
+	}
+
+	.location-box {
+		max-width: 250px;
+	}
+
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+		max-height: 400px;
+	}
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
@@ -752,7 +782,7 @@ section {
  }
 
 /* Navbar for tablets */
- @media (max-width: 1025px) {
+/* @media (max-width: 1025px) {
     .navbar-header {
         float: none;
     }
@@ -780,16 +810,21 @@ section {
     .navbar-text {
         float: none;
         margin: 15px 0;
-    }
+    }*/
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+/*    .navbar-collapse.collapse.in { 
         display: block!important;
+        padding-left: 20px;
     }
     .collapsing {
         overflow: hidden!important;
     }
 
-}
+    #map {
+    	height: 300px;
+    }
+
+}*/
 
 /* Fixes */
 

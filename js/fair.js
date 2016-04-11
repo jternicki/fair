@@ -192,8 +192,8 @@ $('#employers-carousel').owlCarousel({
     responsive:{
         0:{
             items:1,
-            nav:true,
-            dots: false
+            nav:false,
+            dots: true
         },
         600:{
             items:3,
@@ -220,3 +220,5 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
+
