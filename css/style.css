@@ -155,7 +155,7 @@ a {
 	color: #fff;
 }
 
-.navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:visited {
+.navbar-nav>li>a:visited, .navbar-nav>li>a:hover, .navbar-nav>li>a:active {
 	background-color: #f04f52;
 
 }
@@ -556,10 +556,12 @@ section {
 .feedback-icon {
 	background-color: #fff;
 	color: #00acc1;
-	padding: 10px;
+	padding: 12px;
 	border-radius: 50%;
-	display: inline-flex;
+	display: block !important;
 	margin: 0 20px;
+	width: 50px;
+	margin: 0 auto;
 
 }
 

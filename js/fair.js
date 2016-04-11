@@ -165,8 +165,8 @@ $('#feedback-carousel').owlCarousel({
     autoplayHoverPause:true,
     slideSpeed : 300,
     paginationSpeed : 400,
-    animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
     responsive:{
         0:{
             items:1
@@ -187,8 +187,8 @@ $('#employers-carousel').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
-    animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
     responsive:{
         0:{
             items:1,
