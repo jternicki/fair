@@ -155,31 +155,31 @@ $('.owl-portfolio').owlCarousel({
 })
 
 // Owl carousel
-$('#feedback-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    navigation : false, // Show next and prev buttons
-    dots:true,
-    autoplay:false,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
-    slideSpeed : 300,
-    paginationSpeed : 400,
-    animateOut: 'slideOutLeft',
-    animateIn: 'slideInRight',
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
+// $('#feedback-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     navigation : false, // Show next and prev buttons
+//     dots:true,
+//     autoplay:false,
+//     autoplayTimeout:5000,
+//     autoplayHoverPause:true,
+//     slideSpeed : 300,
+//     paginationSpeed : 400,
+//     animateOut: 'slideOutLeft',
+//     animateIn: 'slideInRight',
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
     
-});
+// });
 
 // Employers carousel 
 

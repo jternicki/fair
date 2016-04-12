@@ -10,7 +10,6 @@ dark grey: #263238;
 
 * {
 	font-size: 16px;
-	/*margin: 0;*/
 }
 
 html {
@@ -217,10 +216,6 @@ a {
 	padding: 7% 20% 0 20%;
 }
 
-/*.sponsor {
-	margin-top: 20px;
-}*/
-
 .general-sponsor {
 	display: inline-block;
 	font-size: 0.875em;
@@ -296,7 +291,7 @@ section {
 	border: 2px solid #fff;
 	margin-top: 20px;
 	padding: 30px;
-	/*height: 280px;*/
+	min-height: 300px;
 }
 
 .keypoing-head {
@@ -339,11 +334,6 @@ section {
 .employer {
 	margin: 0 auto;
 }
-
-/*.owl-item img {
-	height: 150px;
-	width: auto;
-}*/
 
 /* Speakers */
 
@@ -430,13 +420,7 @@ section {
  	opacity: 0.7;
  }
 
-/* .timetable:hover {
- 	-webkit-box-shadow: 0 0 6px rgba(38,50,56,.3);
-	-moz-box-shadow: 0 0 6px rgba(38,50,56,.3);
-	box-shadow: 0 0 6px rgba(38,50,56,.3);
- }
-*/
-  .timetable-time, .timetable-name, .timetable-author {
+.timetable-time, .timetable-name, .timetable-author {
  	display: table-cell;
  }
 
@@ -534,7 +518,6 @@ section {
 #sponsors .sponsor {
 	display: block;	
 	margin: 0 auto;
-	/*width: 500px;*/ 
 }
 
 /* Feedback */
@@ -649,7 +632,41 @@ section {
 
  /* Devices */
 
-/* Extra small devices (phones, less than 768px) */
+/* Extra small devices (phones, less than 320px) */
+
+@media (max-width: 320px) { 
+	h1 {
+		font-size: 2em !important;
+	}
+
+	h3 {
+		font-size: 1.75em;
+	}
+
+	#feedback {
+		display: none;
+	}
+
+	#map {
+		height: 250px;
+	}
+
+	.location-box > i {
+		margin: 0 0 20px 80px;
+	}
+
+	.location-box > p {
+		text-align: center;
+	}
+
+	.location-box {
+		max-width: 250px;
+	}
+
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+		max-height: 400px;
+	}
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 767px) { 
@@ -730,43 +747,65 @@ section {
 		margin-top: 10px;
 	}
 
-
+	.keypoint {
+		min-height: 200px;
+	}
  }
 
-/* No media query since this is the default in Bootstrap */
 
-@media (max-width: 320px) { 
-	h1 {
-		font-size: 2em;
-	}
 
-	#feedback {
-		display: none;
-	}
 
-	#map {
-		height: 250px;
-	}
 
-	.location-box > i {
-		margin: 0 0 20px 80px;
-	}
-
-	.location-box > p {
-		text-align: center;
-	}
-
-	.location-box {
-		max-width: 250px;
-	}
-
-	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-		max-height: 400px;
-	}
-}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 767px) { 
+	.keypoint {
+		min-height: 200px;
+	}
+	.timetable {
+		width: 100%;
+	}
+
+	.timetable-time, .timetable-name, .timetable-author {
+		display: block;
+	}
+
+	.timetable-author {
+		padding-left: 0;
+	}
+
+	p > i {
+		padding-right: 10px;
+	}
+
+	#schedule a {
+		max-width: 60%;
+	}
+
+	.footer {
+		height: 200px;
+	}
+
+	.logo-footer {
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+
+	.footer-txt {
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.social-footer {
+		padding-left: 0;
+		width: 50%;
+		margin: 20px auto 0 auto
+	}
+
+	.contacts {
+		margin-top: 10px;
+	}
+ }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -800,7 +839,7 @@ section {
  }
 
 /* Navbar for tablets */
-/* @media (max-width: 1025px) {
+ @media (max-width: 1025px) {
     .navbar-header {
         float: none;
     }
@@ -828,9 +867,9 @@ section {
     .navbar-text {
         float: none;
         margin: 15px 0;
-    }*/
+    }
     /* since 3.1.0 */
-/*    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in { 
         display: block!important;
         padding-left: 20px;
     }
@@ -842,7 +881,7 @@ section {
     	height: 300px;
     }
 
-}*/
+}
 
 /* Fixes */
 
