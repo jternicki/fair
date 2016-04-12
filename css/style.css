@@ -669,7 +669,7 @@ section {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 767px) { 
+@media (max-width: 769px) { 
 	body {
 		margin-bottom: 200px;
 	}
@@ -758,7 +758,7 @@ section {
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 767px) { 
+/*@media (min-width: 767px) { 
 	.keypoint {
 		min-height: 200px;
 	}
@@ -781,31 +781,7 @@ section {
 	#schedule a {
 		max-width: 60%;
 	}
-
-	.footer {
-		height: 200px;
-	}
-
-	.logo-footer {
-		display: block;
-		margin: 0 auto 20px auto;
-	}
-
-	.footer-txt {
-		text-align: center;
-		font-size: 1em;
-	}
-
-	.social-footer {
-		padding-left: 0;
-		width: 50%;
-		margin: 20px auto 0 auto
-	}
-
-	.contacts {
-		margin-top: 10px;
-	}
- }
+ }*/
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
