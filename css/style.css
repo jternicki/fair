@@ -520,6 +520,20 @@ section {
 	margin: 0 auto;
 }
 
+.infopartner {
+	width: auto;
+	height: 56px;
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+.infopartner-wide {
+	width: 200px;
+	height: auto;
+	padding-top: 20px;
+}
+
 /* Feedback */
 
 .quote-header {
